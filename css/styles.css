@@ -16,6 +16,7 @@ a {
 
 .top {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
   flex-shrink: 0;
@@ -32,7 +33,10 @@ a {
   letter-spacing: 0.78px;
 }
 
-.top_navigation {
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   column-gap: 16px;
   align-items: center;
   color: var(--primary-color);
@@ -44,11 +48,12 @@ a {
 .top_navigation {
   display: flex;
   list-style: none;
-  padding-left: 93px;
+  justify-content: space-between;
+  align-items: center;
   gap: 50px;
 }
 
-.top_navigation .link:hover {
+.nav .link:hover {
   color: rgba(33, 150, 243, 1);
 }
 
@@ -69,19 +74,18 @@ a {
 .inf_navigation {
   display: flex;
   list-style: none;
-  padding-left: 344px;
   gap: 50px;
 }
+
 .portfolio {
   display: flex;
-  height: 1880px;
-  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .main_portfolio .link {
-  background-color: rgba(245, 244, 250, 1);
-  color: rgba(33, 33, 33, 1);
-  text-align: center;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -92,16 +96,13 @@ a {
 }
 
 .main_portfolio .link:hover {
-  background-color: rgb(2, 92, 165);
+  background-color: rgba(33, 150, 243, 1);
 }
 
 .main_portfolio {
   display: flex;
   list-style: none;
   gap: 8px;
-  padding-top: 106px;
-  padding-left: 430px;
-  position: absolute;
 }
 
 .port_img {
@@ -109,7 +110,6 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
-  padding-top: 194px;
   gap: 20px;
 }
 
@@ -120,22 +120,21 @@ a {
   background-color: rgba(238, 238, 238, 1);
   border-radius: 4px;
   border: 1px;
+  box-shadow: rgba(0, 0, 0, 0.16);
 }
-.hero {
+.principal {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 600px;
-  flex-shrink: 0;
-  background-color: black;
+  background-color: rgba(47, 48, 58, 1);
 }
 .hero_title {
-  display: flex;
-  justify-content: center;
   font-family: Roboto;
   font-weight: 900;
   font-size: 32px;
   color: rgba(255, 255, 255, 1);
-  padding-left: 420px;
-  padding-top: 200px;
 }
 
 .button_contact {
@@ -149,28 +148,17 @@ a {
   background-color: rgba(33, 150, 243, 1);
   cursor: pointer;
 }
-.button_contact {
+
+.button_contact:hover {
+  background-color: rgba(34, 150, 243, 1);
+}
+
+.menu_services {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  margin-left: 450px;
-  margin-bottom: 450px;
-}
-
-.hero .button_contact:hover {
-  background-color: blue;
-}
-
-.our_services {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.services {
-  display: flex;
-  display: block;
-  justify-content: center;
-  width: 270px;
+  list-style: none;
 }
 
 h3 {
@@ -198,11 +186,13 @@ h3 {
   letter-spacing: 0.42px;
 }
 
-.menu_services {
+.about {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  list-style: none;
+  align-items: center;
 }
+
 .about_img {
   display: flex;
   justify-content: center;
@@ -222,19 +212,22 @@ h3 {
   line-height: normal;
   letter-spacing: 1.08px;
 }
-.team .container {
-  display: flex;
-  height: 708px;
-}
 
 .team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 648px;
   background-color: rgba(245, 244, 250, 1);
 }
 
 .team_list {
   display: flex;
   list-style: none;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .card_team {
   display: flex;
@@ -265,9 +258,10 @@ h3 {
 }
 .footer {
   display: flex;
+  justify-content: start;
   align-items: center;
   height: 252px;
-  background-color: black;
+  background-color: rgba(47, 48, 58, 1);
 }
 
 .footer_navigation {

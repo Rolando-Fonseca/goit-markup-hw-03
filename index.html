@@ -9,83 +9,82 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
-      </style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+    </style>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!--Linea Superior horizontal-->
-    <section>
-    <div class="top container">
-      <nav class="nav">
-        <a href="index.html" class="logo">WebStudio</a>
-      </nav>
-      <ul class="top_navigation">
-        <li class="navigation">
-          <a class="link" href="/index.html">Estudio</a>
-        </li>
-        <li class="navigation">
-          <a class="link" href="/portafolio.html">Portafolio</a>
-        </li>
-        <li class="navigation"><a class="link" href="#">Contactos</a></li>
-      </ul>
-      <ul class="inf_navigation">
-        <li class="inf">
-          <a class="link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="inf">
-          <a class="link" href="tel:+525555296000">+52 55 5529 6000</a>
-        </li>
-      </ul>
-    </div> 
-   </header>
-    <main>
-      <section class="hero container">
-        <div class="principal">
-        <h1 class="hero_title">SOLUCIONES EFICACES PARA <br />
-           SU NEGOCIO</h1>
-        <button class="button_contact" type="button">
-          Solicite nuestro servicio
-        </button>
-      </div>
-      </section>
-      <section class="our_services container">
-        <!--<h2>Beneficios</h2>-->
-        <ul class="menu_services">
-          <li class="services">
-            <h3>ATENCIÓN A LOS DETALLES</h3>
-            <p class="parrafo">
-              Nos adentramos en todos los detalles y procesos de su negocio,
-              para así desarrollar una solución a su medida.
-            </p>
+    <header>
+      <div class="top container">
+        <nav class="nav">
+          <a href="index.html" class="logo">WebStudio</a>
+          <ul class="top_navigation">
+            <li class="navigation">
+              <a class="link" href="/index.html">Estudio</a>
+            </li>
+            <li class="navigation">
+              <a class="link" href="/portafolio.html">Portafolio</a>
+            </li>
+            <li class="navigation"><a class="link" href="#">Contactos</a></li>
+          </ul>
+        </nav>
+        <ul class="inf_navigation">
+          <li class="inf">
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="services">
-            <h3>PUNTUALIDAD</h3>
-            <p class="parrafo">
-              Con nosotros, usted puede sentirse seguro y protegido. Un
-              principio importante de la empresa: respetar su tiempo y respetar
-              los plazos acordados.
-            </p>
-          </li>
-          <li class="services">
-            <h3>PLANIFICACIÓN</h3>
-            <p class="parrafo">
-              Usted podrá observar y participar en cada fase del desarrollo y
-              aplicación de soluciones.
-            </p>
-          </li>
-          <li class="services">
-            <h3>TEGNOLOGÍA MODERNA</h3>
-            <p class="parrafo">
-              Usamos herramientas innovadoras para resolver las tareas
-              asignadas. Es hora de simplificar los procesos laborales.
-            </p>
+          <li class="inf">
+            <a class="link" href="tel:+525555296000">+52 55 5529 6000</a>
           </li>
         </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container principal">
+          <h1 class="hero_title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+          <button class="button_contact" type="button">
+            Solicite nuestro servicio
+          </button>
+        </div>
       </section>
-      <section class="about container">
+      <section>
+        <div class="our_services">
+          <ul class="menu_services container">
+            <li class="services">
+              <h3>ATENCIÓN A LOS DETALLES</h3>
+              <p class="parrafo">
+                Nos adentramos en todos los detalles y procesos de su negocio,
+                para así desarrollar una solución a su medida.
+              </p>
+            </li>
+            <li class="services">
+              <h3>PUNTUALIDAD</h3>
+              <p class="parrafo">
+                Con nosotros, usted puede sentirse seguro y protegido. Un
+                principio importante de la empresa: respetar su tiempo y
+                respetar los plazos acordados.
+              </p>
+            </li>
+            <li class="services">
+              <h3>PLANIFICACIÓN</h3>
+              <p class="parrafo">
+                Usted podrá observar y participar en cada fase del desarrollo y
+                aplicación de soluciones.
+              </p>
+            </li>
+            <li class="services">
+              <h3>TEGNOLOGÍA MODERNA</h3>
+              <p class="parrafo">
+                Usamos herramientas innovadoras para resolver las tareas
+                asignadas. Es hora de simplificar los procesos laborales.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="about container">
         <h2 class="title2">A qué nos dedicamos</h2>
         <ul class="about_img">
           <li class="box_about_img">
@@ -113,64 +112,67 @@
             />
           </li>
         </ul>
-      </section>
-      <section class="team container">
+      </div>
+      <div class="team container">
         <h2 class="title2">Nuestro Equipo</h2>
         <ul class="team_list">
           <li class="team_img">
             <div class="card_team">
-            <img
-              src="./imag/team1.jpg"
-              width="270"
-              height="260"
-              alt="Andrés Cubo"
-            />
-            <h3>Andrés Cubo</h3>
-            <p class="parrafo">Diseñador de Productos</p></div>
+              <img
+                src="./imag/team1.jpg"
+                width="270"
+                height="260"
+                alt="Andrés Cubo"
+              />
+              <h3>Andrés Cubo</h3>
+              <p class="parrafo">Diseñador de Productos</p>
+            </div>
           </li>
           <li>
             <div class="card_team">
-            <img
-              src="./imag/team2.jpg"
-              width="270"
-              height="260"
-              alt="Carla Palacios"
-            />
-            <h3>Carla Palacios</h3>
-            <p class="parrafo">Desarrolladora Frontend</p></div>
+              <img
+                src="./imag/team2.jpg"
+                width="270"
+                height="260"
+                alt="Carla Palacios"
+              />
+              <h3>Carla Palacios</h3>
+              <p class="parrafo">Desarrolladora Frontend</p>
+            </div>
           </li>
           <li>
             <div class="card_team">
-            <img
-              src="./imag/team3.jpg"
-              width="270"
-              height="260"
-              alt="Mario Dorado"
-            />
-            <h3>Mario Dorado</h3>
-            <p class="parrafo">Marketing</p></div>
+              <img
+                src="./imag/team3.jpg"
+                width="270"
+                height="260"
+                alt="Mario Dorado"
+              />
+              <h3>Mario Dorado</h3>
+              <p class="parrafo">Marketing</p>
+            </div>
           </li>
           <li>
             <div class="card_team">
-            <img
-              src="./imag/team4.jpg"
-              width="270"
-              height="260"
-              alt="Pablo Mijangos"
-            />
-            <h3>Pablo Mijangos</h3>
-            <p class="parrafo">Diseñador IU</p></div>
+              <img
+                src="./imag/team4.jpg"
+                width="270"
+                height="260"
+                alt="Pablo Mijangos"
+              />
+              <h3>Pablo Mijangos</h3>
+              <p class="parrafo">Diseñador IU</p>
+            </div>
           </li>
         </ul>
-      </section>
+      </div>
     </main>
-    <section class="footer container">
+    <div class="footer container">
       <footer>
-      <a class="logo" href="/index.html">WebStudio</a>
+        <a class="logo" href="/index.html">WebStudio</a>
         <nav>
           <address>
             <ul class="footer_navigation">
-           
               <li class="foot_nav">
                 Calz. Ticomán 500, Ciudad de México, CDMX, México
               </li>
@@ -187,6 +189,6 @@
           </address>
         </nav>
       </footer>
-    </section>
+    </div>
   </body>
 </html>
