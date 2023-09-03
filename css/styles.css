@@ -4,14 +4,21 @@ a {
 }
 
 :root {
-  --primary-color: var(rgba(33, 33, 33, 1));
-  --font-color: var(rgba(33, 150, 243, 1));
-  --font2-color: var(rgba(117, 117, 117, 1));
-  --button: var(rgba(33, 150, 243, 1));
+  --primary-color: rgba(33, 33, 33, 1);
+  --color_hover: rgba(33, 150, 243, 1);
+  --color_white: rgba(255, 255, 255, 1);
+  --font2-color: rgba(117, 117, 117, 1);
+  --button: rgba(33, 150, 243, 1);
 }
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .top {
@@ -23,7 +30,7 @@ a {
 }
 
 .logo {
-  color: rgb(33, 150, 243);
+  color: var(--color_hover);
   text-align: right;
   font-family: Raleway;
   font-size: 26px;
@@ -53,8 +60,8 @@ a {
   gap: 50px;
 }
 
-.nav .link:hover {
-  color: rgba(33, 150, 243, 1);
+.current :hover {
+  color: var(--color_hover);
 }
 
 .inf_navigation .link {
@@ -68,13 +75,13 @@ a {
   letter-spacing: 0.28px;
 }
 
-.inf_navigation .link:hover {
-  color: rgba(33, 150, 243, 1);
-}
 .inf_navigation {
   display: flex;
   list-style: none;
   gap: 50px;
+}
+.current :hover {
+  color: var(--color_hover);
 }
 
 .portfolio {
@@ -83,9 +90,20 @@ a {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 56px;
 }
 
-.main_portfolio .link {
+.main_portfolio {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  padding-top: 112px;
+  padding-bottom: 56px;
+}
+
+.filter_button {
+  color: var(--primary-color);
+  text-align: center;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -93,16 +111,20 @@ a {
   line-height: 1.625;
   letter-spacing: 0.48px;
   cursor: pointer;
+  background-color: var(--color_white);
+  border: none;
+  padding: 6px 24px;
+  border-radius: 4px;
 }
 
-.main_portfolio .link:hover {
-  background-color: rgba(33, 150, 243, 1);
+.filter_button:hover {
+  background-color: var(--color_hover);
+  color: var(--color_white);
 }
 
-.main_portfolio {
-  display: flex;
-  list-style: none;
-  gap: 8px;
+.current-button {
+  background-color: var(--color_hover);
+  color: var(--color_white);
 }
 
 .port_img {
@@ -110,11 +132,12 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
-  gap: 20px;
+  gap: 30px;
 }
 
 .card_port {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
   background-color: rgba(238, 238, 238, 1);
@@ -122,6 +145,10 @@ a {
   border: 1px;
   box-shadow: rgba(0, 0, 0, 0.16);
 }
+.card_port {
+  flex-basis: calc((100% - 60px) / 3);
+}
+
 .principal {
   display: flex;
   flex-direction: column;
@@ -134,7 +161,7 @@ a {
   font-family: Roboto;
   font-weight: 900;
   font-size: 32px;
-  color: rgba(255, 255, 255, 1);
+  color: var(--color_white);
 }
 
 .button_contact {
@@ -145,12 +172,8 @@ a {
   border-radius: 4px;
   padding: 10px 32px 10px 32px;
   gap: 10px;
-  background-color: rgba(33, 150, 243, 1);
+  background-color: var(--button);
   cursor: pointer;
-}
-
-.button_contact:hover {
-  background-color: rgba(34, 150, 243, 1);
 }
 
 .menu_services {
@@ -177,7 +200,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(117, 117, 117);
+  color: var(--font2-color);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -242,7 +265,7 @@ h3 {
   list-style: none;
 }
 .footer_navigation .foot_nav {
-  color: rgb(255, 255, 255);
+  color: var(--color_white);
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -251,17 +274,20 @@ h3 {
   letter-spacing: 0.42px;
 }
 .footer_navigation .link {
-  color: rgba(117, 117, 117, 1);
+  color: var(--font2-color);
 }
-.footer_navigation .link:hover {
-  color: rgba(33, 150, 243, 1);
+
+.current :hover {
+  color: var(--color_hover);
 }
+
 .footer {
   display: flex;
   justify-content: start;
   align-items: center;
   height: 252px;
   background-color: rgba(47, 48, 58, 1);
+  padding-left: 40px;
 }
 
 .footer_navigation {
